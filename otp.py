@@ -8,7 +8,7 @@ from customer import Customers
 class OtpInterface:
     def __init__(self):
         # Create empty pyotp object
-        self.totp = pyotp.TOTP(pyotp.random_base32(), interval = 300)
+        self.totp = pyotp.TOTP(pyotp.random_base32(), interval=300)
 
     # Returns the pyotp object
     def getObj(self):
@@ -25,9 +25,9 @@ class OtpInterface:
         # Create SNS client
         client = boto3.client(
             "sns",
-            aws_access_key_id="AKIAYO35KQMIIX4E5MNG",
-            aws_secret_access_key="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",
-            region_name="us-east-1"
+            aws_access_key_id="AKIA4MA2PUEPLIBEP7WU",
+            aws_secret_access_key="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",
+            region_name="ap-south-1"
         )
         # Send SMS with current generated OTP
         client.publish(
