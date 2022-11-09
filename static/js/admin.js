@@ -11,7 +11,7 @@ document.addEventListener("contextmenu", function (e) {
 	e.preventDefault();
 });
 
-const homeURL = "https://bankchad.herokuapp.com";
+const homeURL = "https://bankchad.herokuapp.com/";
 
 var userid,
 	usertype,

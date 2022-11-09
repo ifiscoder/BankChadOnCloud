@@ -19,7 +19,7 @@ window.onload = function () {
 	localStorage.removeItem("loggedStatus");
 };
 
-const homeURL = "https://bankchad.herokuapp.com";
+const homeURL = "https://bankchad.herokuapp.com/";
 
 var auth_user_type, forgotpw_userid_data;
 const sign_in_btn = document.querySelector("#sign-in-btn");
